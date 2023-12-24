@@ -1,0 +1,42 @@
+.team-card {
+  background-color: white;
+  transition: 0.5s;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.team-card:hover {
+  background-color: #22c55e;
+}
+.team-card:hover p {
+  color: white;
+}
+.team-card:hover h1 {
+  color: black;
+}
+.team-social {
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  transition: 0.5s;
+}
+.team-card:hover .team-social {
+  left: 10%;
+}
+.team-social .team-social-icon {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+  font-size: 20px;
+  display: grid;
+  place-items: center;
+}
+
+.team-social .team-social-icon:hover {
+  background-color: #22c55e;
+  color: white;
+}

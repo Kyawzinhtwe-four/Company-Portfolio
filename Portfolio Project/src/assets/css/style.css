@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.primary-color {
+  color: #22c55e;
+}
+.bg-secondary-color {
+  background-color: rgb(54, 59, 56);
+}
+.bg-primary-color {
+  background-color: #22c55e;
+}
+.activeClassName {
+  background-color: #22c55e;
+  position: relative;
+  z-index: 1;
+  width: 85%;
+}
+
+@media screen and (min-width: 768px) {
+  .activeClassName::before {
+    position: absolute;
+    top: -45%;
+    left: -20%;
+    background-color: #22c55e;
+    z-index: -1;
+    content: "";
+    width: calc(100% + 50px);
+    height: calc(100% + 180px);
+    transform: rotate(-15deg);
+  }
+}

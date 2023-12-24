@@ -1,0 +1,44 @@
+.construction {
+  width: 100%;
+  min-height: 35vh;
+  background-image: url(../../assets/images/home_page_3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.construction .overlay-cover {
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #22c55e;
+  z-index: 2;
+}
+.construction .overlay-cover::before {
+  content: "";
+  width: calc(100% + 300px);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 30%;
+  background-color: #22c55e;
+  z-index: 2;
+  transform: rotate(-110deg);
+}
+.construction-btn {
+  background-color: #22c55e;
+}
+@media screen and (max-width: 768px) {
+  .construction .overlay-cover::before {
+    content: "";
+    transform: rotate(-80deg);
+    left: 0;
+  }
+  .construction-btn {
+    background-color: black;
+  }
+}
